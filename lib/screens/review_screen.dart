@@ -83,21 +83,21 @@ class Review extends StatelessWidget {
                           booking.service,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontSize: 16,
                           ),
                         ),
                         SizedBox(height: 6),
                         Text(
                           serviceProvider.name,
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 12,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
                           serviceProvider.category,
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 12,
                             color: Colors.grey,
                           ),
                         ),
@@ -106,19 +106,19 @@ class Review extends StatelessWidget {
                           children: [
                             Icon(
                               Icons.star,
-                              size: 14,
+                              size: 10,
                               color: Colors.yellow,
                             ),
                             SizedBox(width: 4),
                             Text(
                               '${serviceProvider.rating}/5',
-                              style: TextStyle(fontSize: 14),
+                              style: TextStyle(fontSize: 10),
                             ),
                             SizedBox(width: 4),
                             Text(
                               '(${serviceProvider.rating} reviews)',
                               style:
-                                  TextStyle(fontSize: 14, color: Colors.grey),
+                                  TextStyle(fontSize: 10, color: Colors.grey),
                             ),
                           ],
                         ),
@@ -127,7 +127,7 @@ class Review extends StatelessWidget {
                           'R${booking.price.toStringAsFixed(2)}',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontSize: 12,
                             color: Colors.blue,
                           ),
                         ),
@@ -154,13 +154,14 @@ class Review extends StatelessWidget {
                   // Edit Button
                   Container(
                     width: double.infinity,
+                    height: 50,
                     margin: EdgeInsets.only(bottom: 10),
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.pop(context);
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal,
+                        backgroundColor: Color(0xff007ba7),
                         padding: EdgeInsets.symmetric(vertical: 15),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -175,6 +176,7 @@ class Review extends StatelessWidget {
                   // Pay Button
                   Container(
                     width: double.infinity,
+                    height: 50,
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -186,7 +188,7 @@ class Review extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.teal,
+                        backgroundColor: Color(0xff838a6b),
                         padding: EdgeInsets.symmetric(vertical: 15),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),

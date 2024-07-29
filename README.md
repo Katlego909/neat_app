@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 
-## neat_test_app - A Flutter Project
+## neat app - A Flutter Project
 
 This project is a Flutter application called "neat_test_app". 
 
